@@ -14,7 +14,6 @@
             <layers>
                 <layer>meta-arago-distro</layer>
                 <layer>meta-arago-extras</layer>
-                <layer>meta-arago-test</layer>
             </layers>
         </repo>
         <repo name='meta-flutter' url='https://github.com/meta-flutter/meta-flutter.git' branch='master' commit='HEAD' disabled='true'>
@@ -49,6 +48,7 @@
         </repo>
         <repo name='meta-ti' url='https://git.yoctoproject.org/meta-ti' branch='master-wip' commit='HEAD'>
             <layers>
+                <layer>meta-ti-test</layer>
                 <layer>meta-ti-extras</layer>
                 <layer>meta-beagle</layer>
                 <layer>meta-ti-bsp</layer>
