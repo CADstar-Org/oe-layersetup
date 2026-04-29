@@ -22,7 +22,6 @@ repos:
     layers:
       meta-arago-distro:
       meta-arago-extras:
-      meta-arago-test:
 
   meta-qt6:
     url: "https://code.qt.io/yocto/meta-qt6.git"
@@ -51,6 +50,7 @@ repos:
     branch: "master-next"
     path: "sources/meta-ti"
     layers:
+      meta-ti-test:
       meta-ti-extras:
       meta-beagle:
       meta-ti-bsp:

@@ -22,7 +22,6 @@ repos:
     layers:
       meta-arago-distro:
       meta-arago-extras:
-      meta-arago-test:
 
   meta-browser:
     url: "https://github.com/OSSystems/meta-browser.git"
@@ -59,6 +58,7 @@ repos:
     branch: "master"
     path: "sources/meta-ti"
     layers:
+      meta-ti-test:
       meta-ti-extras:
       meta-beagle:
       meta-ti-bsp:

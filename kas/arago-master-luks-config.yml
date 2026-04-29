@@ -22,7 +22,6 @@ repos:
     layers:
       meta-arago-distro:
       meta-arago-extras:
-      meta-arago-test:
 
   meta-security:
     url: "https://git.yoctoproject.org/meta-security"
@@ -58,6 +57,7 @@ repos:
     branch: "master"
     path: "sources/meta-ti"
     layers:
+      meta-ti-test:
       meta-ti-extras:
       meta-beagle:
       meta-ti-bsp:
