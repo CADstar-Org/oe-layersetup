@@ -7,7 +7,7 @@
     <xi:include href='../templates/bblayers.conf.xml' xmlns:xi='http://www.w3.org/2001/XInclude'/>
     <xi:include href='../templates/local-arago64-v3.conf.xml' xmlns:xi='http://www.w3.org/2001/XInclude'/>
 
-    <bitbake url='https://git.openembedded.org/bitbake' branch='wrynose' commit='HEAD'/>
+    <bitbake url='https://git.openembedded.org/bitbake' branch='2.18' commit='HEAD'/>
 
     <repos>
         <repo name='meta-arago' url='https://git.yoctoproject.org/meta-arago' branch='wrynose' commit='HEAD'>

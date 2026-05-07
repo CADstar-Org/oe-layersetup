@@ -20,7 +20,7 @@
             "uri": "https://git.openembedded.org/bitbake"
           }
         },
-        "rev": "wrynose"
+        "rev": "2.18"
       },
       "path": "bitbake"
     },

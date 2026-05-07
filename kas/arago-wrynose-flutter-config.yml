@@ -10,7 +10,7 @@ target: tisdk-default-image
 repos:
   bitbake:
     url: "https://git.openembedded.org/bitbake"
-    branch: "wrynose"
+    branch: "2.18"
     path: "sources/bitbake"
     layers:
       .: disabled
