@@ -64,7 +64,7 @@
             "uri": "https://git.yoctoproject.org/meta-virtualization"
           }
         },
-        "rev": "master"
+        "rev": "wrynose"
       },
       "path": "meta-virtualization"
     },

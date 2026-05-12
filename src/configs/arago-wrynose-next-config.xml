@@ -34,7 +34,7 @@
         <repo name='meta-qt6' url='https://code.qt.io/yocto/meta-qt6.git' branch='6.11' commit='HEAD'>
             <layers/>
         </repo>
-        <repo name='meta-virtualization' url='https://git.yoctoproject.org/meta-virtualization' branch='master' commit='HEAD'>
+        <repo name='meta-virtualization' url='https://git.yoctoproject.org/meta-virtualization' branch='wrynose' commit='HEAD'>
             <layers/>
         </repo>
         <repo name='meta-openembedded' url='https://git.openembedded.org/meta-openembedded' branch='wrynose' commit='HEAD'>
