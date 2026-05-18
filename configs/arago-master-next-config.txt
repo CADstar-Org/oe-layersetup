@@ -12,7 +12,7 @@ MOTD: NOTE:
 bitbake,https://git.openembedded.org/bitbake,master,HEAD
 meta-arago,https://git.yoctoproject.org/meta-arago,master-next,HEAD,layers=meta-arago-distro:meta-arago-extras
 #meta-flutter,https://github.com/meta-flutter/meta-flutter.git,master,HEAD,layers=.:meta-flutter-apps
-#meta-browser,https://github.com/OSSystems/meta-browser.git,master,e252b51fd261a4cb05be932f0143ac444693a1ea,layers=meta-chromium
+#meta-browser,https://github.com/OSSystems/meta-browser.git,master,e07817d8f8ada5340347c34f1ac6d5ee68eaa5ff,layers=meta-chromium
 #meta-selinux,https://git.yoctoproject.org/meta-selinux,master,HEAD,layers=
 meta-qt6,https://code.qt.io/yocto/meta-qt6.git,dev,HEAD,layers=
 meta-virtualization,https://git.yoctoproject.org/meta-virtualization,master,HEAD,layers=
