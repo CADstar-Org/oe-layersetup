@@ -25,7 +25,7 @@ repos:
 
   meta-browser:
     url: "https://github.com/OSSystems/meta-browser.git"
-    branch: "master"
+    branch: "wrynose"
     commit: "e07817d8f8ada5340347c34f1ac6d5ee68eaa5ff"
     path: "sources/meta-browser"
     layers:
