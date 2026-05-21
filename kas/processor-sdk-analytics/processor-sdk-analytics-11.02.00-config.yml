@@ -11,7 +11,7 @@ repos:
   bitbake:
     url: "https://git.openembedded.org/bitbake"
     branch: "2.8"
-    commit: "8dcf084522b9c66a6639b5f117f554fde9b6b45a"
+    commit: "d3b4c352dd33fca90cd31649eda054b884478739"
     path: "sources/bitbake"
     layers:
       .: disabled
@@ -19,7 +19,7 @@ repos:
   meta-arago:
     url: "https://git.yoctoproject.org/meta-arago"
     branch: "scarthgap"
-    commit: "1640df60b0f75722b9e5923a5bfba3767e7d97a8"
+    commit: "efba4adb406b9675641ee85ea3bce1c375ef5963"
     path: "sources/meta-arago"
     layers:
       meta-arago-distro:
@@ -35,13 +35,13 @@ repos:
   meta-virtualization:
     url: "https://git.yoctoproject.org/meta-virtualization"
     branch: "scarthgap"
-    commit: "17ac21e7d7f6f40a87618b22278b63bcfa14dbf2"
+    commit: "3dd635f613f7299d986a8ab6bc9f584370f8ed1d"
     path: "sources/meta-virtualization"
 
   meta-openembedded:
     url: "https://git.openembedded.org/meta-openembedded"
     branch: "scarthgap"
-    commit: "e76bf51a92b41d4cb185fc164ae43a863910ccd1"
+    commit: "5124ac4a658899158f4a7a2ddf1d2ca931ec7d0e"
     path: "sources/meta-openembedded"
     layers:
       meta-networking:
@@ -60,7 +60,7 @@ repos:
   meta-ti:
     url: "https://git.yoctoproject.org/meta-ti"
     branch: "scarthgap"
-    commit: "ea8c0b1cf1ab8a0b327e3feb1144c1ccf05b8278"
+    commit: "a444d3137a527d4a405986a5ffa143ed7dfc0961"
     path: "sources/meta-ti"
     layers:
       meta-ti-extras:
@@ -79,13 +79,13 @@ repos:
   meta-clang:
     url: "https://github.com/kraj/meta-clang"
     branch: "scarthgap"
-    commit: "5c602337ea1a80fb7217eeda04e396cf90587dca"
+    commit: "5bce7e26a38a58bb52242494e54ab2af40009574"
     path: "sources/meta-clang"
 
   oe-core:
     url: "https://git.openembedded.org/openembedded-core"
     branch: "scarthgap"
-    commit: "2b3d2b671a149cbeea2bdc9ba42192da2015c3b7"
+    commit: "52380df998b3a8fe6a091f8547434a3231320a8e"
     path: "sources/oe-core"
     layers:
       meta:
@@ -93,7 +93,7 @@ repos:
   meta-tisdk:
     url: "https://git.ti.com/git/ti-sdk-linux/meta-tisdk.git"
     branch: "scarthgap"
-    commit: "32482cad2f630892b733c1457b9e9d835b098174"
+    commit: "755bc6a5007feb1d1dcf6f2a155442f997e37e5a"
     path: "sources/meta-tisdk"
     layers:
       meta-ti-foundational:
@@ -101,5 +101,5 @@ repos:
   meta-edgeai:
     url: "https://git.ti.com/git/edgeai/meta-edgeai.git"
     branch: "scarthgap"
-    commit: "7d07e25a15632494d6c30efb09d68de1c95f9394"
+    commit: "216d5badbf187e8e8cfa298534e5e1d37d7d69a1"
     path: "sources/meta-edgeai"
