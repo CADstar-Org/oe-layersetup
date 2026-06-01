@@ -18,7 +18,9 @@
         </repo>
         <repo name='meta-ti' url='https://git.yoctoproject.org/meta-ti' branch='master-wip' commit='HEAD'>
             <layers>
+                <layer>meta-ti-test</layer>
                 <layer>meta-ti-extras</layer>
+                <layer>meta-beagle</layer>
                 <layer>meta-ti-bsp</layer>
             </layers>
         </repo>
@@ -28,18 +30,9 @@
                 <layer>meta-arm-toolchain</layer>
             </layers>
         </repo>
-        <repo name='meta-clang' url='https://github.com/kraj/meta-clang' branch='master' commit='HEAD' disabled='true'>
-            <layers/>
-        </repo>
         <repo name='oe-core' url='https://git.openembedded.org/openembedded-core' branch='master' commit='HEAD'>
             <layers>
                 <layer>meta</layer>
-            </layers>
-        </repo>
-        <repo name='meta-arago' url='https://git.yoctoproject.org/meta-arago' branch='master-wip' commit='HEAD'>
-            <layers>
-                <layer>meta-arago-extras</layer>
-                <layer>meta-arago-test</layer>
             </layers>
         </repo>
     </repos>

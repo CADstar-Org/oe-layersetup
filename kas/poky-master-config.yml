@@ -28,7 +28,9 @@ repos:
     branch: "master"
     path: "sources/meta-ti"
     layers:
+      meta-ti-test:
       meta-ti-extras:
+      meta-beagle:
       meta-ti-bsp:
 
   meta-arm:
@@ -45,11 +47,3 @@ repos:
     path: "sources/oe-core"
     layers:
       meta:
-
-  meta-arago:
-    url: "https://git.yoctoproject.org/meta-arago"
-    branch: "master"
-    path: "sources/meta-arago"
-    layers:
-      meta-arago-extras:
-      meta-arago-test:
