@@ -16,6 +16,14 @@
                 <layer>meta-yocto-bsp</layer>
             </layers>
         </repo>
+        <repo name='meta-openembedded' url='https://git.openembedded.org/meta-openembedded' branch='master' commit='HEAD'>
+            <layers>
+                <layer>meta-networking</layer>
+                <layer>meta-python</layer>
+                <layer>meta-oe</layer>
+                <layer>meta-filesystems</layer>
+            </layers>
+        </repo>
         <repo name='meta-ti' url='https://git.yoctoproject.org/meta-ti' branch='master' commit='HEAD'>
             <layers>
                 <layer>meta-ti-test</layer>

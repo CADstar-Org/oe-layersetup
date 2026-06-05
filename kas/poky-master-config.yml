@@ -23,6 +23,16 @@ repos:
       meta-poky:
       meta-yocto-bsp:
 
+  meta-openembedded:
+    url: "https://git.openembedded.org/meta-openembedded"
+    branch: "master"
+    path: "sources/meta-openembedded"
+    layers:
+      meta-networking:
+      meta-python:
+      meta-oe:
+      meta-filesystems:
+
   meta-ti:
     url: "https://git.yoctoproject.org/meta-ti"
     branch: "master"
