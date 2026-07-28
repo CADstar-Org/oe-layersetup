@@ -142,7 +142,7 @@ sub convert_config
     {
         if ($lpLine =~ /meta-ti/)
         {
-            if ($lpLine =~ /(kirkstone|scarthgap|master)/)
+            if ($lpLine =~ /(kirkstone|scarthgap|wrynose|master)/)
             {
                 $loMatchBranch = 1;
             }
