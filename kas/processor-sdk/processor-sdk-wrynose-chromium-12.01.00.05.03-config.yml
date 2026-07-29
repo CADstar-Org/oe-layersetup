@@ -1,0 +1,108 @@
+---
+header:
+  version: 17
+  includes:
+    - kas/templates/bblayers.conf.yml
+    - kas/templates/local-arago64-v3.conf.yml
+
+target: tisdk-default-image
+
+repos:
+  bitbake:
+    url: "https://git.openembedded.org/bitbake"
+    branch: "2.18"
+    commit: "acfe02fa38b5da9e6a36c6cedcf91d4fcbefbfbd"
+    path: "sources/bitbake"
+    layers:
+      .: disabled
+
+  meta-tisdk:
+    url: "https://github.com/TexasInstruments/meta-tisdk.git"
+    branch: "wrynose"
+    commit: "12.01.00.05.03"
+    path: "sources/meta-tisdk"
+    layers:
+      meta-ti-foundational:
+      meta-ti-ml:
+
+  meta-arago:
+    url: "https://git.yoctoproject.org/meta-arago"
+    branch: "wrynose"
+    commit: "12.01.00.05"
+    path: "sources/meta-arago"
+    layers:
+      meta-arago-distro:
+      meta-arago-extras:
+
+  meta-browser:
+    url: "https://github.com/OSSystems/meta-browser.git"
+    branch: "wrynose"
+    commit: "e07817d8f8ada5340347c34f1ac6d5ee68eaa5ff"
+    path: "sources/meta-browser"
+    layers:
+      meta-chromium:
+
+  meta-qt6:
+    url: "https://code.qt.io/yocto/meta-qt6.git"
+    branch: "6.11"
+    commit: "ef0611a598fd7ba909804be0c6314ed7c85725b9"
+    path: "sources/meta-qt6"
+
+  meta-virtualization:
+    url: "https://git.yoctoproject.org/meta-virtualization"
+    branch: "wrynose"
+    commit: "781735b97ae5013cacabbecd38e6da6b510cf3fb"
+    path: "sources/meta-virtualization"
+
+  meta-openembedded:
+    url: "https://git.openembedded.org/meta-openembedded"
+    branch: "wrynose"
+    commit: "100027977216601000cbefc42c2ff6cf667e7b5e"
+    path: "sources/meta-openembedded"
+    layers:
+      meta-networking:
+      meta-python:
+      meta-oe:
+      meta-gnome:
+      meta-filesystems:
+      meta-multimedia:
+
+  meta-ti:
+    url: "https://git.yoctoproject.org/meta-ti"
+    branch: "wrynose"
+    commit: "12.01.00.05"
+    path: "sources/meta-ti"
+    layers:
+      meta-ti-test:
+      meta-ti-extras:
+      meta-beagle:
+      meta-ti-bsp:
+
+  meta-arm:
+    url: "https://git.yoctoproject.org/meta-arm"
+    branch: "wrynose"
+    commit: "caa36c53f796beb25d9b9f58b1b7a492e9987e15"
+    path: "sources/meta-arm"
+    layers:
+      meta-arm:
+      meta-arm-toolchain:
+
+  meta-rust-bin:
+    url: "https://github.com/rust-embedded/meta-rust-bin.git"
+    branch: "master"
+    commit: "54721fa1c7a4edaba7fb63cdbcaf0c6253c5fa3a"
+    path: "sources/meta-rust-bin"
+
+  meta-slint:
+    url: "https://github.com/slint-ui/meta-slint.git"
+    branch: "main"
+    commit: "0b233ff476b391521e9fc3125ed97673fb2e898b"
+    path: "sources/meta-slint"
+
+  oe-core:
+    url: "https://git.openembedded.org/openembedded-core"
+    branch: "wrynose"
+    commit: "c2746a4a165fd99c2d1aafed17533555787f37ce"
+    path: "sources/oe-core"
+    layers:
+      meta:

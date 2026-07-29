@@ -1,0 +1,83 @@
+<?xml version='1.0'?>
+<config>
+    <description>TI Processor SDK vwrynose-selinux-12.01.00.05.03</description>
+
+    <xi:include href='../../common/distro_arago.xml' xmlns:xi='http://www.w3.org/2001/XInclude'/>
+    <xi:include href='../../common/machines.xml' xmlns:xi='http://www.w3.org/2001/XInclude'/>
+    <xi:include href='../../templates/bblayers.conf.xml' xmlns:xi='http://www.w3.org/2001/XInclude'/>
+    <xi:include href='../../templates/local-arago64-v3.conf.xml' xmlns:xi='http://www.w3.org/2001/XInclude'/>
+
+    <bitbake url='https://git.openembedded.org/bitbake' branch='2.18' commit='acfe02fa38b5da9e6a36c6cedcf91d4fcbefbfbd'/>
+
+    <repos>
+        <repo name='meta-tisdk' url='https://github.com/TexasInstruments/meta-tisdk.git' branch='wrynose' commit='12.01.00.05.03'>
+            <layers>
+                <layer>meta-ti-foundational</layer>
+                <layer>meta-ti-ml</layer>
+            </layers>
+        </repo>
+        <repo name='meta-arago' url='https://git.yoctoproject.org/meta-arago' branch='wrynose' commit='12.01.00.05'>
+            <layers>
+                <layer>meta-arago-distro</layer>
+                <layer>meta-arago-extras</layer>
+            </layers>
+        </repo>
+        <repo name='meta-selinux' url='https://git.yoctoproject.org/meta-selinux' branch='wrynose' commit='1c3a699f363167571ab39fecb0fe6f56691a4e20'>
+            <layers/>
+        </repo>
+        <repo name='meta-qt6' url='https://code.qt.io/yocto/meta-qt6.git' branch='6.11' commit='ef0611a598fd7ba909804be0c6314ed7c85725b9'>
+            <layers/>
+        </repo>
+        <repo name='meta-virtualization' url='https://git.yoctoproject.org/meta-virtualization' branch='wrynose' commit='781735b97ae5013cacabbecd38e6da6b510cf3fb'>
+            <layers/>
+        </repo>
+        <repo name='meta-openembedded' url='https://git.openembedded.org/meta-openembedded' branch='wrynose' commit='100027977216601000cbefc42c2ff6cf667e7b5e'>
+            <layers>
+                <layer>meta-networking</layer>
+                <layer>meta-python</layer>
+                <layer>meta-oe</layer>
+                <layer>meta-gnome</layer>
+                <layer>meta-filesystems</layer>
+                <layer>meta-multimedia</layer>
+            </layers>
+        </repo>
+        <repo name='meta-ti' url='https://git.yoctoproject.org/meta-ti' branch='wrynose' commit='12.01.00.05'>
+            <layers>
+                <layer>meta-ti-test</layer>
+                <layer>meta-ti-extras</layer>
+                <layer>meta-beagle</layer>
+                <layer>meta-ti-bsp</layer>
+            </layers>
+        </repo>
+        <repo name='meta-arm' url='https://git.yoctoproject.org/meta-arm' branch='wrynose' commit='caa36c53f796beb25d9b9f58b1b7a492e9987e15'>
+            <layers>
+                <layer>meta-arm</layer>
+                <layer>meta-arm-toolchain</layer>
+            </layers>
+        </repo>
+        <repo name='meta-rust-bin' url='https://github.com/rust-embedded/meta-rust-bin.git' branch='master' commit='54721fa1c7a4edaba7fb63cdbcaf0c6253c5fa3a'>
+            <layers/>
+        </repo>
+        <repo name='meta-slint' url='https://github.com/slint-ui/meta-slint.git' branch='main' commit='0b233ff476b391521e9fc3125ed97673fb2e898b'>
+            <layers/>
+        </repo>
+        <repo name='oe-core' url='https://git.openembedded.org/openembedded-core' branch='wrynose' commit='c2746a4a165fd99c2d1aafed17533555787f37ce'>
+            <layers>
+                <layer>meta</layer>
+            </layers>
+        </repo>
+        <repo name='meta-cyclonedx' url='https://github.com/iris-GmbH/meta-cyclonedx.git' branch='wrynose' commit='02ec3a875f2cb3ae6ed85981d09228409d25a108' disabled='true'>
+            <layers/>
+        </repo>
+    </repos>
+
+    <local-conf>
+        <line>DISTRO_FEATURES:append = " acl xattr pam selinux"</line>
+    </local-conf>
+
+    <tools>
+        <tool type='oe-layersetup'>
+            <var name='BITBAKE_INCLUSIVE_VARS' value='yes'/>
+        </tool>
+    </tools>
+</config>
