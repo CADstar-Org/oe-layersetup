@@ -16,7 +16,7 @@
                 <layer>meta-arago-extras</layer>
             </layers>
         </repo>
-        <repo name='meta-flutter' url='https://github.com/meta-flutter/meta-flutter.git' branch='master' commit='HEAD'>
+        <repo name='meta-flutter' url='https://github.com/meta-flutter/meta-flutter.git' branch='wrynose' commit='HEAD'>
             <layers>
                 <layer>.</layer>
 		<layer>meta-flutter-apps</layer>

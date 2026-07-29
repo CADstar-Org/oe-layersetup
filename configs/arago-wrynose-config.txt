@@ -3,7 +3,7 @@
 
 bitbake,https://git.openembedded.org/bitbake,2.18,HEAD
 meta-arago,https://git.yoctoproject.org/meta-arago,wrynose,HEAD,layers=meta-arago-distro:meta-arago-extras
-#meta-flutter,https://github.com/meta-flutter/meta-flutter.git,master,HEAD,layers=.:meta-flutter-apps
+#meta-flutter,https://github.com/meta-flutter/meta-flutter.git,wrynose,HEAD,layers=.:meta-flutter-apps
 #meta-browser,https://github.com/OSSystems/meta-browser.git,wrynose,e07817d8f8ada5340347c34f1ac6d5ee68eaa5ff,layers=meta-chromium
 #meta-selinux,https://git.yoctoproject.org/meta-selinux,wrynose,HEAD,layers=
 meta-qt6,https://code.qt.io/yocto/meta-qt6.git,6.11,HEAD,layers=

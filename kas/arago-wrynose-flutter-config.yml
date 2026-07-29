@@ -25,7 +25,7 @@ repos:
 
   meta-flutter:
     url: "https://github.com/meta-flutter/meta-flutter.git"
-    branch: "master"
+    branch: "wrynose"
     path: "sources/meta-flutter"
     layers:
       .:
