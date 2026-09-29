@@ -71,12 +71,12 @@
                 <layer>meta</layer>
             </layers>
         </repo>
-        <repo name='meta-tisdk' url='https://git.ti.com/git/ti-sdk-linux/meta-tisdk.git' branch='scarthgap' commit='5fa4830828e5b14b9598948a2088adbbeed45642'>
+        <repo name='meta-tisdk' url='https://git.ti.com/git/ti-sdk-linux/meta-tisdk.git' branch='scarthgap' commit='3eea2c684b9fffb2c5dda40a569d63e9a0bd0e0e'>
             <layers>
                 <layer>meta-ti-foundational</layer>
             </layers>
         </repo>
-        <repo name='meta-edgeai' url='https://git.ti.com/git/edgeai/meta-edgeai.git' branch='scarthgap' commit='47437a7817c1f88213b1f27403b4b7966aaac813'>
+        <repo name='meta-edgeai' url='https://git.ti.com/git/edgeai/meta-edgeai.git' branch='scarthgap' commit='5dc140cfd2ccd2b8175c123bae15b1c6d5a3ebeb'>
             <layers/>
         </repo>
     </repos>
